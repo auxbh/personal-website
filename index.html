@@ -1,141 +1,67 @@
 <!DOCTYPE html>
-<!--
-	Hyperspace by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-
-<meta content="Arthur's page" property="og:title" />
-<meta content="Some portfolio and stuff" property="og:description" />
-<meta content="#2B2D31" data-react-helmet="true" name="theme-color" />
-
 <html>
-	<head>
-		<title>auxbh</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<link rel="icon" href="images/pfp.jpeg">
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-		<script>
-			function updateParisTime() {
-				// Get the current time in the user's local time zone
-				var localTime = new Date();
-	
-				// Set the time zone to Paris (Central European Time)
-				var parisTimezoneOffset = 1; // Paris is UTC+1
-				var utc = localTime.getTime() + (localTime.getTimezoneOffset() * 60000);
-				var parisTime = new Date(utc + (3600000 * parisTimezoneOffset));
-	
-				// Format the time
-				var hours = parisTime.getHours();
-				var minutes = parisTime.getMinutes();
-				var seconds = parisTime.getSeconds();
-	
-				// Add leading zero if needed
-				hours = (hours < 10) ? "0" + hours : hours;
-				minutes = (minutes < 10) ? "0" + minutes : minutes;
-				seconds = (seconds < 10) ? "0" + seconds : seconds;
-	
-				// Display the time on the HTML page
-				document.getElementById("parisTime").innerHTML = hours + ":" + minutes + ":" + seconds;
-	
-				// Update the time every second
-				setTimeout(updateParisTime, 1000);
-			}
-	
-			// Call the function when the page loads
-			window.onload = updateParisTime;
-		</script>
-	</head>
-	<body class="is-preload">
-
-		<!-- Sidebar -->
-			<section id="sidebar">
-				<div class="inner">
-					<nav>
-						<ul>
-							<li><a href="#intro">Welcome</a></li>
-							<li><a href="#one">Past work</a></li>
-							<li><a href="#two">Contact me</a></li>
-						</ul>
-					</nav>
-				</div>
-			</section>
-
-		<!-- Wrapper -->
-			<div id="wrapper">
-
-				<!-- Intro -->
-					<section id="intro" class="wrapper style1 fullscreen fade-up">
-						<div class="inner">
-							<h1>👋 • Hey, I'm Arthur</h1>
-							<p>I'm a 15 y/o doing some stuff on Roblox.<br/>
-								I like scripting, building things and setting up systems.</p>
-							<ul class="actions">
-								<li><a href="#one" class="button scrolly">Past work</a></li>
-							</ul>
-						</div>
-					</section>
-
-				<!-- One -->
-					<section id="one" class="wrapper style2 spotlights">
-						<section>
-							<a href="projects" class="image"><img src="images/pastwork.png" alt="" data-position="25% 25%" /></a>
-							<div class="content">
-								<div class="inner">
-									<h2>Other things</h2>
-									<p>Some projects</p>
-									<ul class="actions">
-										<li><a href="projects" class="button">View more</a></li>
-									</ul>
-								</div>
-							</div>
-						</section>
-						<section>
-							<a href="poseidon" class="image"><img src="https://cdn.discordapp.com/attachments/1018931359487643759/1041355064616435722/transparent.png" alt="" data-position="center center" /></a>
-							<div class="content">
-								<div class="inner">
-									<h2>Poseidon supermarket</h2>
-									<p>Supermarket owned by huckbyon, I was a SHR there</p>
-									<ul class="actions">
-										<li><a href="poseidon" class="button">View more</a></li>
-									</ul>
-								</div>
-							</div>
-					</section>
-
-				<!-- Two -->
-					<section id="two" class="wrapper style1 fade-up">
-						<div class="inner">
-							<h2>Get in touch</h2>
-							<p>If you would like to contact me, please DM me on <a href="https://discord.com/users/295200865437089792">Discord</a></p>
-							<a href="https://twitter.com/_auxbh" target="blank"><img src="images/twitter.svg" alt="Twitter" height="30" width="40" /></a>
-							<a href="https://github.com/auxbh" target="blank"><img src="images/github.svg" alt="Github" height="30" width="40" /></a>
-							<a href="https://www.youtube.com/@auxbh" target="blank"><img src="images/youtube.svg" alt="Youtube" height="30" width="40" /></a>										
-							<h3>My time right now:</h3>
-							<p id="parisTime"></p>
-						</div>
-					</section>
-
-			</div>
-
-		<!-- Footer -->
-			<footer id="footer" class="wrapper style1-alt">
-				<div class="inner">
-					<ul class="menu">
-						<li>&copy; auxbh. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-					</ul>
-				</div>
-			</footer>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-	</body>
+  <head>
+    <title>auxbh</title>
+    <link href="style.css" type="text/css" rel="stylesheet" />
+    <script src="script.js"></script>
+    <link rel="icon" href="images/pfp.png">
+    <meta content="Arthur's page" property="og:title" />
+    <meta content="Some portfolio and stuff" property="og:description" />
+    <meta content="#2B2D31" data-react-helmet="true" name="theme-color" />
+  </head>
+  <body>
+    <div class="fullScale">
+      <div class="main">
+        <div class="topWelcome">
+            <h1>👋 • Hey, I'm Arthur</h1>
+            <img class="pfp" src="images/pfp.gif">
+        </div>
+        <p>
+          I'm a self-taught developer from France<img src="https://raw.githubusercontent.com/hampusborgos/country-flags/main/svg/fr.svg" height="18" width="50">who enjoys Roblox.<br>
+          I have experience in <a style="color: #01a3ff" href="https://luau-lang.org/" target="_blank">Luau</a>, and I know a few other programming languages.<br>
+          <!-- I am currently learning <a style="color: #41b682" href="https://vuejs.org/" target="_blank">Vue JS</a>. -->
+        </p>
+        <h2>🏗️ • Projects</h2>
+        <div class="projectsHolder">
+          <a href="https://www.roblox.com/games/4200758973/Automatic-cafe" target="_blank">
+            <div class="project">
+              <div class="projectTop">
+                <h3>Automatic cafe</h3>
+              </div>
+              <div class="projectBottom">
+                <p><br>
+                  Nice and cozy Roblox cafe where you get served by a robot. Fully automated.
+                </p>
+              </div>
+            </div>
+          </a>
+          <a href="/robloxprojects.html">
+            <div class="project">
+              <div class="projectTop">
+                <h3>Roblox stuff</h3>
+              </div>
+              <div class="projectBottom">
+                <p><br>
+                  Some of my Roblox creations. (WIP)
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="contact">
+            <h3>Useful links</h3>
+            <div class="socialsLinks">
+                <a href="https://discord.com/users/295200865437089792" target="blank"><img src="images/discord.svg" alt="Discord" /></a>
+                <a href="https://twitter.com/_auxbh" target="blank"><img src="images/twitter.svg" alt="Twitter" /></a>
+		        <a href="https://github.com/auxbh" target="blank"><img src="images/github.svg" alt="Github" /></a>
+		        <a href="https://www.youtube.com/@auxbh" target="blank"><img src="images/youtube.svg" alt="Youtube" /></a>
+                <a href="mailto:arthur@auxbh.fr" target="blank"><img src="images/mail.svg" alt="Email" /></a>
+            </div>
+            <p>
+                It is currently <strong class="mytime"></strong> for me.
+            </p>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
