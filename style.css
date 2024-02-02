@@ -161,7 +161,7 @@ body {
     margin: 0 auto;
     margin-top: 35px;
     align-items: center;
-    display: block;
+    display: inline-block;
 }
 
 .socialsLinks img {
