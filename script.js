@@ -3,9 +3,9 @@ function isMobileDevice() {
     return /Mobi|Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
 }
 
-// Redirect to e-z.bio if a mobile device is detected
+// Redirect to carrd if a mobile device is detected
 if (isMobileDevice()) {
-    window.location.href = "https://e-z.bio/auxbh";
+    window.location.href = "https://auxbh.carrd.co/";
 }
 
 document.addEventListener("DOMContentLoaded", function() {
